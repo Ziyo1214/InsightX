@@ -1,0 +1,35 @@
+{% extends 'visit/basevideo.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+
+{% block content %}
+
+<!-- Start your project here-->
+
+<main class="mt-3">
+    <br>
+
+    <div class="container my-5">
+        <!--Section: Project Overview-->
+        <section>
+            <h3 class="text-center mb-5">Nima uchun biznes-tahlil platformamizni tanlaysiz? Quyidagi video orqali
+                batafsil bilib oling</h3>
+
+            <div class="ratio ratio-16x9" id="video-container">
+<!--                <iframe id="video-frame" src="https://player.vimeo.com/video/137857207" title="Vimeo video"-->
+<!--                        allowfullscreen></iframe>-->
+                <iframe id="video-frame" src="{% static 'video/video.mp4' %}" title="Vimeo video"
+                        allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!--Main layout-->
+
+{% endblock %}
+

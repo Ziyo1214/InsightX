@@ -1,0 +1,297 @@
+{% extends 'visit/basevisit.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+
+{% block content %}
+
+<!-- Start your project here-->
+
+<main>
+    <div class="container my-5">
+        <!--Section: Project Overview-->
+        <section>
+            <h3 class="text-center mb-5">Biznes-tahlil platformasi kim uchun kerak?</h3>
+
+            <p class="text-center mb-5 mx-auto w-responsive">
+                Bizning platformamiz kichik va o'rta biznesni moliyaviy ko'rsatkichlarni tahlil qilish va kelajakdagi o'sishni
+                bashorat qilish uchun zarur bo'lgan vositalar bilan kengaytirish uchun mo'ljallangan.
+                Ilg'or AI va ML algoritmlarini integratsiyalash orqali biz korxonalarga amaliy tushunchalarga ega bo'lish,
+                qarorlar qabul qilishni yaxshilash va operatsiyalarni optimallashtirishga yordam beramiz.
+            </p>
+
+            <div class="row">
+                <div class="col-lg-4 mb-lg-0 mb-5">
+                    <div class="d-flex justify-content-start">
+                        <div class="me-4">
+                            <i class="fas fa-chart-line text-danger fa-2x" style="color: #7f00ee;"></i>
+                        </div>
+                        <div>
+                            <h5>Kompleks moliyaviy tahlil</h5>
+                            <p>
+                                Bizning platformamiz batafsil moliyaviy tahlilni taqdim etadi, bu korxonalarga daromadlar,
+                                xarajatlar va boshqa asosiy moliyaviy ko'rsatkichlarni kuzatishga yordam beradi. Haqiqiy
+                                vaqtda ma'lumotlar va moslashtirilgan asboblar paneli yordamida siz ishlashni kuzatishingiz va ongli qarorlar qabul qilishingiz mumkin.
+                            </p>
+                            <a class="btn btn-danger btn-rounded" href="{% url 'adminmain'%}" data-mdb-ripple-init>Batafsil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-lg-0 mb-5">
+                    <div class="d-flex justify-content-start">
+                        <div class="me-4">
+                            <i class="fas fa-cogs text-danger fa-2x" style="color: #7f00ee;"></i>
+                        </div>
+                        <div class="col-lg-10 col-md-9 col-10">
+                            <h5>AIga asoslangan baholash</h5>
+                            <p>
+                                Prognozlash uchun AI kuchidan foydalaniladi. Bizning platformamiz ma'lumotlar tendentsiyalarini
+                                tahlil qilish va kelajakdagi ish faoliyatini prognoz qilish uchun MLdan foydalanadi,
+                                bu esa korxonalarga strategik rejalashtirish va raqobatchilardan oldinda turish imkonini taqdim etadi.
+                            </p>
+                            <a class="btn btn-danger btn-rounded" href="{% url 'adminmain'%}" data-mdb-ripple-init>Batafsil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-start">
+                        <div class="me-4">
+                            <i class="fas fa-lock text-danger fa-2x" style="color: #7f00ee;"></i>
+                        </div>
+                        <div class="col-lg-10 col-md-9 col-10">
+                            <h5>Xavfsiz va Mutanosib</h5>
+                            <p>
+                                Xavfsizlik va muvofiqlik bizning platformamizning asosidir. Biz kuchli shifrlash standartlarini,
+                                rolga asoslangan kirish nazoratini joriy qilamiz va maʼlumotlaringiz doimo himoyalanganligini taʼminlab,
+                                GDPR qoidalariga rioya qilamiz.
+                            </p>
+                            <a class="btn btn-danger btn-rounded" href="{% url 'adminmain'%}" data-mdb-ripple-init>Batafsil</a>
+                        </div>
+                    </div>
+                    <span id="services"></span>
+                </div>
+            </div>
+        </section>
+        <!--Section: Project Overview-->
+
+
+        <hr class="my-5"/>
+
+
+        <!--Section: Services Overview-->
+        <section>
+            <h3 class="text-center mb-5">Bizning asosiy xizmatlarimiz</h3>
+
+            <p class="text-center mb-md-5 mx-auto w-responsive">
+                Insight X dasturi biznes operatsiyalaringizni optimallashtirish va o'sishni rag'batlantirish uchun mo'ljallangan
+                bir qator xizmatlarni taklif etadi.
+                Ilg'or tahlildan tortib mavjud tizimlar bilan uzluksiz integratsiyaga qadar,
+                biz sizga bugungi raqobat bozorida muvaffaqiyat qozonish uchun zarur vositalarni taqdim etamiz.
+            </p>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6" style="margin-top: -5.3rem;">
+                    <img src="https://mdbootstrap.com/img/illustrations/graphics(3).png" class="img-fluid"
+                         alt="sample image"/>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row mb-4">
+                        <div class="col-md-1 col-2">
+                            <i class="fas fa-chart-line fa-2x" style="color: #7f00ee;"></i>
+                        </div>
+                        <div class="col-md-11 col-10">
+                            <h5>Moliyaviy tahlil</h5>
+                            <p>
+                                Biznesingiz samaradorligini tekshirish uchun batafsil moliyaviy tahlillardan foydalaning.
+                                Bizning platformamiz asosiy moliyaviy ko'rsatkichlarni kuzatib boradi, bu sizga oqilona qarorlar qabul qilish va
+                                kelajak uchun rejalashtirishga yordam beradi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-1 col-2">
+                            <i class="fas fa-sync-alt fa-2x" style="color: #7f00ee;"></i>
+                        </div>
+                        <div class="col-md-11 col-10">
+                            <h5>Tizim integratsiyasi</h5>
+                            <p>
+                                CRM va boshqaruv sistemalari kabi mavjud tizimlaringiz bilan muammosiz birlashtiring.
+                                Taklif qilinayotgan yechimlar operatsiyalarni soddalashtirish va samaradorlikni oshirish uchun
+                                amaldagi ish yurituv texnologiyalar bilan integratsiyalashgan holda ishlaydi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 col-2">
+                            <i class="fas fa-lock fa-2x" style="color: #7f00ee;"></i>
+                        </div>
+                        <div class="col-md-11 col-10">
+                            <h5>Ma'lumotlar xavfsizligi</h5>
+                            <p>
+                                Kuchli shifrlash standartlari va rolga asoslangan kirish boshqaruvlari(RBAC & MFA) yordamida
+                                maʼlumotlaringiz xavfsizligini birinchi oʻringa qoʻyamiz va biznes maʼlumotlaringiz
+                                har doim himoyalangan boʻlishini taʼminlaymiz.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span id="attracts"></span>
+        </section>
+        <!--Section: Services Overview-->
+
+
+        <hr class="my-5"/>
+
+        <!--Section: Latest News-->
+        <section class="text-center">
+            <h3 class="mb-5">So'nggi yangilanishlar</h3>
+
+            <p class="mb-5 mx-auto w-responsive">
+                Platformamizdagi eng so'nggi ishlanmalar va o'zgarishlardan xabardor bo'ling.
+                Bu yerda biz eng soʻnggi yangiliklar, xizmatlarimiz haqidagi yangilanishlar va
+                sizni xabardor qilish uchun muhim eʼlonlarni baham koʻramiz.
+            </p>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-4 mb-4">
+                    <div class="bg-image hover-zoom mb-4 shadow-1-strong rounded">
+                        <img src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" class="img-fluid"
+                             alt="News Image 1"/>
+                        <a href="#!">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <h5 class="mb-3">New Feature Release: Advanced Analytics</h5>
+                    <p class="mb-4">
+                        Yangi Advanced Analytics funksiyamiz ishga tushirilganini e'lon qilishdan xursandmiz.
+                        Ushbu vosita moliyaviy ma'lumotlaringiz haqida chuqurroq ma'lumot beradi,
+                        bu sizga ko'proq asosli qarorlar qabul qilish va biznes operatsiyalaringizni optimallashtirishga
+                        yordam beradi.
+                    </p>
+                    <ul class="list-unstyled mb-0">
+                        <a class="p-2 fa-lg fb-ic">
+                            <i class="fab fa-facebook-f text-danger"> </i>
+                        </a>
+                        <a class="p-2 fa-lg tw-ic">
+                            <i class="fab fa-twitter text-danger"> </i>
+                        </a>
+                        <a class="p-2 fa-lg ins-ic">
+                            <i class="fab fa-instagram text-danger"> </i>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="bg-image hover-zoom mb-4 shadow-1-strong rounded">
+                        <img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid"
+                             alt="News Image 2"/>
+                        <a href="#!">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <h5 class="mb-3">GRAND Prosperity Corp bilan hamkorlik to'g'risidagi e'lon</h5>
+                    <p class="mb-4">
+                        We are thrilled to announce our partnership with GRAND Prosperity Corp, a leading provider of logistics
+                        solutions. This collaboration aims to enhance our platform’s capabilities and offer our users
+                        more comprehensive services.
+                    </p>
+                    <ul class="list-unstyled mb-0">
+                        <a class="p-2 fa-lg fb-ic">
+                            <i class="fab fa-facebook-f text-danger"> </i>
+                        </a>
+                        <a class="p-2 fa-lg tw-ic">
+                            <i class="fab fa-twitter text-danger"> </i>
+                        </a>
+                        <a class="p-2 fa-lg ins-ic">
+                            <i class="fab fa-instagram text-danger"> </i>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="bg-image hover-zoom mb-4 shadow-1-strong rounded">
+                        <img src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg" class="img-fluid"
+                             alt="News Image 3"/>
+                        <a href="#!">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <h5 class="mb-3">Kelgusi vebinar: AI yordamida logistik salohiyatni optimallashtirish</h5>
+                    <p class="mb-4">
+                        AI logistika va ta’minot zanjiri boshqaruvini qanday o‘zgartirayotganini muhokama qiladigan eksklyuziv vebinarga qo‘shiling.
+                        Platformamiz tez rivojlanayotgan sanoatda oldingi saflarda bo'lishingiz uchun qanday yordam berishi mumkinligini bilib oling.
+                    </p>
+                    <ul class="list-unstyled mb-0">
+                        <a class="p-2 fa-lg fb-ic">
+                            <i class="fab fa-facebook-f text-danger"> </i>
+                        </a>
+                        <a class="p-2 fa-lg tw-ic">
+                            <i class="fab fa-twitter text-danger"> </i>
+                        </a>
+                        <a class="p-2 fa-lg ins-ic">
+                            <i class="fab fa-instagram text-danger"> </i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <span id="contact"></span>
+        </section>
+        <!--Section: Latest News-->
+
+
+        <hr class="my-5"/>
+
+        <!--Section: Design Block-->
+        <!--Section: Contact Us-->
+        <section class="text-center">
+            <h3 class="mb-5">Get in Touch</h3>
+
+            <p class="text-center mb-5 mx-auto w-responsive">
+                Have questions, feedback, or need assistance? We’re here to help! Reach out to us, and we’ll respond as
+                soon as possible. Your satisfaction is our priority.
+            </p>
+
+            <form>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <p class="text-center mt-lg-4 mb-4">
+                            <strong>Savollaringiz bo'lsa hoziroq murojaat qiling</strong>
+                        </p>
+                        <div class="form-outline mb-4" data-mdb-input-init>
+                            <input type="text" id="contactName" class="form-control"/>
+                            <label class="form-label" for="contactName">FIO</label>
+                        </div>
+                        <div class="form-outline mb-4" data-mdb-input-init>
+                            <input type="email" id="contactEmail" class="form-control"/>
+                            <label class="form-label" for="contactEmail">Email</label>
+                        </div>
+                        <div class="form-outline mb-4" data-mdb-input-init>
+                            <textarea class="form-control" id="contactMessage" rows="4"></textarea>
+                            <label class="form-label" for="contactMessage">Savol va murojaat</label>
+                        </div>
+                        <div class="text-center pb-3">
+                            <button type="submit" class="btn btn-outline-danger btn-rounded btn-block mb-5 mb-md-0"
+                                    data-mdb-ripple-init>
+                                Xabarni jo'natish
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" style="margin-top: -7rem;">
+                        <img src="https://mdbootstrap.com/img/illustrations/graphics(1).png" class="img-fluid"
+                             alt="Contact Us"/>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!--Section: Contact Us-->
+
+        <!--Section: Design Block-->
+
+    </div>
+</main>
+
+<!--Main layout-->
+
+{% endblock %}
